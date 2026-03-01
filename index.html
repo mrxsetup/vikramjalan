@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIKRAM JALAN</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '892947739651696');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=892947739651696&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+
+<body class="bg-white min-h-screen flex items-center justify-center p-4">
+
+<div class="w-full max-w-sm text-center">
+
+<img src="https://github.com/BkAdAgency/Telugufantasy/blob/main/teluguimg.jpg?raw=true"
+class="w-24 h-24 rounded-full mx-auto mb-4 shadow-md" alt="Profile">
+
+<h1 class="text-2xl font-bold mb-2">VIKRAM JALAN</h1>
+
+<p class="text-green-600 text-sm font-semibold mb-3">
+🔥 <span id="memberCount">100,000</span> Active Members
+</p>
+
+<button onclick="trackAndRedirect()" 
+class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg transition active:scale-95 mb-4">
+JOIN TELEGRAM NOW
+</button>
+
+<p class="text-gray-600 text-sm mb-5">
+Daily exclusive fantasy updates. Limited access.
+</p>
+
+<p class="text-[11px] text-gray-400 mt-4">
+Instant access • Free to join
+</p>
+
+<p class="text-[11px] text-gray-500 mt-6">
+CONTACT FOR ADVERTISEMENT - 
+<a href="https://t.me/BkAdAgency4" target="_blank" class="text-blue-600 font-semibold">
+@BkAdAgency4
+</a>
+</p>
+
+</div>
+
+<script>
+
+function trackAndRedirect() {
+
+  fbq('track', 'Lead', {
+    content_name: 'Telegram Join Button',
+    value: 1,
+    currency: 'INR'
+  });
+
+  setTimeout(function(){
+    window.location.href = "https://t.me/+B84Y1PQZEtFkZjY1";
+  }, 800);
+}
+
+let count = 100000;
+const counter = document.getElementById("memberCount");
+
+function updateCounter() {
+  const change = Math.floor(Math.random() * 3) + 1;
+  count += change;
+  counter.innerText = count.toLocaleString();
+}
+
+setInterval(updateCounter, 3000);
+
+</script>
+
+</body>
+</html>
